@@ -38,11 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd PARTY
+    'rest_framework',
+
     # LOCAL
     'frontend.apps.FrontendConfig',
     'accounts.apps.AccountsConfig',
     'courses.apps.CoursesConfig',
-
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
