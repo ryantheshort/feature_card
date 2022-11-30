@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # LOCAL
     'frontend.apps.FrontendConfig',
+    'accounts.apps.AccountsConfig',
 
 ]
 
@@ -131,3 +133,7 @@ REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend/static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Substituting a custom User model
+# https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#substituting-a-custom-user-model
+
+AUTH_USER_MODEL = 'accounts.User'
