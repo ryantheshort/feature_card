@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # LOCAL
     'frontend.apps.FrontendConfig',
     'accounts.apps.AccountsConfig',
+    'courses.apps.CoursesConfig',
 
 ]
 
